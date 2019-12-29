@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Upload new File</title>
+
+
+    
+    <script>
+
+
+
+  function validateForm() {
+  var x = document.forms["myForm"]["file"].value;
+  if (x == "") {
+    alert(" Please choose a file");
+    
+  }
+  else{
+    alert("uploaded successfully");
+  }
+}
+</script>
+
+
+    </script>
+
+</head>
+<body><br><br><br><br><br>
+  <div class="container">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading"> <center><h4>Upload new File</h4></center></div>
+      <div class="panel-body">
+        
+        <form method= "POST" enctype="multipart/form-data" action=" http://127.0.0.1:5000/upload1"  onsubmit="return validateForm()"  name="myForm">
+        <center>  <input type="file" name="file"  style="width:500px"> </center><br>
+         <center> <input type=submit value=Upload style="background-color: rgb(201, 248, 201);" ></center>
+         <p id="demo"></p>
+        </form>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+
+    
+</body>
+</html>
