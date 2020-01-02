@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 
+ 
+</head>
+<body>
+  <center>
+
+  <div class="container">
+    <h2>Image Processing</h2>
+    <div class="card" style="height:200px;width:400px;">
+      <div class="card-header">Input image</div>
+      <div class="card-body"><center><img src="{{ user_image }}" alt="User Image" style="height:100px;width:100px"></center><br>
+      </div> 
+      
+    </div>
+ 
+
+
+<h1></h1>
+ 
+<!--<img src="static/images/Hydrangeas.jpg" style="height:100px;width:100px"/>-->
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header">Image Properties</div>
+  <div class="card-body">
+{{a.format}}<br>
+{{a.size}}<br>
+{{a.mode}}<br>
+</div> 
+      
+</div>
+
+
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header">Image Rotate</div>
+  <div class="card-body"><center><img src="{{ use_image }}" alt="User Image" style="height:100px;width:100px" ><br>
+  </center><br>
+  </div> 
+  
+</div>
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header"> Image Crop</div>
+  <div class="card-body"><center><img src="{{ user }}" alt="User Image" style="height:100px;width:100px" ><br>
+    
+  </center><br>
+  </div> 
+  
+</div>
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header">RGB image</div>
+  <div class="card-body"><center><img src="{{ use }}" alt="User Image" style="height:100px;width:100px" ><br>
+    <br>
+    
+  </center><br>
+  </div> 
+  
+</div>
+
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header"> Image Resize</div>
+  <div class="card-body"><center><img src="{{ us }}" alt="User Image" style="height:100px;width:200px" ><br>
+    <br>
+    
+    
+  </center><br>
+  </div> 
+  
+</div>
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header">Rotate Top to Bottom </div>
+  <div class="card-body"><center><img src="{{ u }}" alt="User Image" style="height:100px;width:100px" ><br>
+    
+    
+    
+  </center><br>
+  </div> 
+  
+</div>
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header"> Gray scale Image</div>
+  <center><img src="{{ i }}" alt="User Image" style="height:100px;width:100px" >  <br>
+    
+  
+    
+    
+  </center><br>
+  </div> 
+  
+</div>
+
+<div class="card" style="height:200px;width:400px;">
+  <div class="card-header"> Image filter</div>
+  <center><img src="{{ im }}" alt="User Image" style="height:100px;width:100px" ><br>
+  <br>
+    
+    
+  </center><br>
+  </div> 
+  
+</div>
+
+
+
+
+
+
+</div>
+</center>
+</body>
+</html>
