@@ -19,7 +19,13 @@ def show_index():
     #source image
     img = os.path.join(app.config['UPLOAD_FOLDER'], 'Tulips.jpg')
 
-    return render_template("flask_pillow.html", user_image = img
+        #properties
+    img_source = Image.open("D:/Monisha/mysql-flask/pillow/app/static/images/Tulips.jpg")
+    img_format = img_source.format
+    img_size=img_source.size
+    img_mode=img_source.mode
+
+    return render_template("flask_pillow.html", user_image = img,img_format = img_format,img_size=img_size,img_mode=img_mode,img_source=img_source,
     )
 
 
